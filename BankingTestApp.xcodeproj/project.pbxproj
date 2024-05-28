@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5CE7068B2C05F0D200C65F08 /* BankingTestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7068A2C05F0D200C65F08 /* BankingTestAppApp.swift */; };
+		5CE7068B2C05F0D200C65F08 /* BankingTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7068A2C05F0D200C65F08 /* BankingTestApp.swift */; };
 		5CE7068D2C05F0D200C65F08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7068C2C05F0D200C65F08 /* ContentView.swift */; };
 		5CE7068F2C05F0D300C65F08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE7068E2C05F0D300C65F08 /* Assets.xcassets */; };
 		5CE706922C05F0D300C65F08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE706912C05F0D300C65F08 /* Preview Assets.xcassets */; };
+		5CE7069B2C0608E800C65F08 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7069A2C0608E800C65F08 /* Tabs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5CE706872C05F0D200C65F08 /* BankingTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankingTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CE7068A2C05F0D200C65F08 /* BankingTestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingTestAppApp.swift; sourceTree = "<group>"; };
+		5CE7068A2C05F0D200C65F08 /* BankingTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingTestApp.swift; sourceTree = "<group>"; };
 		5CE7068C2C05F0D200C65F08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5CE7068E2C05F0D300C65F08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CE706912C05F0D300C65F08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5CE7069A2C0608E800C65F08 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		5CE706892C05F0D200C65F08 /* BankingTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				5CE7068A2C05F0D200C65F08 /* BankingTestAppApp.swift */,
-				5CE7068C2C05F0D200C65F08 /* ContentView.swift */,
+				5CE706992C0608CA00C65F08 /* Models */,
+				5CE706982C0608BA00C65F08 /* Views */,
+				5CE7068A2C05F0D200C65F08 /* BankingTestApp.swift */,
 				5CE7068E2C05F0D300C65F08 /* Assets.xcassets */,
 				5CE706902C05F0D300C65F08 /* Preview Content */,
 			);
@@ -65,6 +68,22 @@
 				5CE706912C05F0D300C65F08 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5CE706982C0608BA00C65F08 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5CE7068C2C05F0D200C65F08 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5CE706992C0608CA00C65F08 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5CE7069A2C0608E800C65F08 /* Tabs.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +157,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CE7068D2C05F0D200C65F08 /* ContentView.swift in Sources */,
-				5CE7068B2C05F0D200C65F08 /* BankingTestAppApp.swift in Sources */,
+				5CE7068B2C05F0D200C65F08 /* BankingTestApp.swift in Sources */,
+				5CE7069B2C0608E800C65F08 /* Tabs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
