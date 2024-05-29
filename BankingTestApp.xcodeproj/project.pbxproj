@@ -12,6 +12,14 @@
 		5CE7068F2C05F0D300C65F08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE7068E2C05F0D300C65F08 /* Assets.xcassets */; };
 		5CE706922C05F0D300C65F08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE706912C05F0D300C65F08 /* Preview Assets.xcassets */; };
 		5CE7069B2C0608E800C65F08 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7069A2C0608E800C65F08 /* Tabs.swift */; };
+		5CE7069D2C06430200C65F08 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7069C2C06430200C65F08 /* CardModel.swift */; };
+		5CE7069F2C06448E00C65F08 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7069E2C06448E00C65F08 /* TransactionModel.swift */; };
+		5CE706A12C06452600C65F08 /* CardsPreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE706A02C06452600C65F08 /* CardsPreviewData.swift */; };
+		5CE706A32C0646C000C65F08 /* TransactionsPreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE706A22C0646C000C65F08 /* TransactionsPreviewData.swift */; };
+		5CE706A52C064B9700C65F08 /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE706A42C064B9700C65F08 /* TransactionRow.swift */; };
+		5CE706A82C065BCA00C65F08 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE706A72C065BCA00C65F08 /* Colors.swift */; };
+		5CE706AB2C0750A800C65F08 /* Transactions.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CE706AA2C0750A800C65F08 /* Transactions.json */; };
+		5CE706AD2C0750C800C65F08 /* Cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CE706AC2C0750C800C65F08 /* Cards.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +29,14 @@
 		5CE7068E2C05F0D300C65F08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CE706912C05F0D300C65F08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5CE7069A2C0608E800C65F08 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
+		5CE7069C2C06430200C65F08 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		5CE7069E2C06448E00C65F08 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		5CE706A02C06452600C65F08 /* CardsPreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsPreviewData.swift; sourceTree = "<group>"; };
+		5CE706A22C0646C000C65F08 /* TransactionsPreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsPreviewData.swift; sourceTree = "<group>"; };
+		5CE706A42C064B9700C65F08 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
+		5CE706A72C065BCA00C65F08 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5CE706AA2C0750A800C65F08 /* Transactions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Transactions.json; sourceTree = "<group>"; };
+		5CE706AC2C0750C800C65F08 /* Cards.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Cards.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,8 @@
 		5CE706892C05F0D200C65F08 /* BankingTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				5CE706A92C07504500C65F08 /* DataMock */,
+				5CE706A62C065BAB00C65F08 /* Helpers */,
 				5CE706992C0608CA00C65F08 /* Models */,
 				5CE706982C0608BA00C65F08 /* Views */,
 				5CE7068A2C05F0D200C65F08 /* BankingTestApp.swift */,
@@ -66,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				5CE706912C05F0D300C65F08 /* Preview Assets.xcassets */,
+				5CE706A02C06452600C65F08 /* CardsPreviewData.swift */,
+				5CE706A22C0646C000C65F08 /* TransactionsPreviewData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -74,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				5CE7068C2C05F0D200C65F08 /* ContentView.swift */,
+				5CE706A42C064B9700C65F08 /* TransactionRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -82,8 +103,27 @@
 			isa = PBXGroup;
 			children = (
 				5CE7069A2C0608E800C65F08 /* Tabs.swift */,
+				5CE7069C2C06430200C65F08 /* CardModel.swift */,
+				5CE7069E2C06448E00C65F08 /* TransactionModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5CE706A62C065BAB00C65F08 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5CE706A72C065BCA00C65F08 /* Colors.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5CE706A92C07504500C65F08 /* DataMock */ = {
+			isa = PBXGroup;
+			children = (
+				5CE706AA2C0750A800C65F08 /* Transactions.json */,
+				5CE706AC2C0750C800C65F08 /* Cards.json */,
+			);
+			path = DataMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +186,8 @@
 			files = (
 				5CE706922C05F0D300C65F08 /* Preview Assets.xcassets in Resources */,
 				5CE7068F2C05F0D300C65F08 /* Assets.xcassets in Resources */,
+				5CE706AB2C0750A800C65F08 /* Transactions.json in Resources */,
+				5CE706AD2C0750C800C65F08 /* Cards.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,8 +199,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CE7068D2C05F0D200C65F08 /* ContentView.swift in Sources */,
+				5CE706A82C065BCA00C65F08 /* Colors.swift in Sources */,
+				5CE706A32C0646C000C65F08 /* TransactionsPreviewData.swift in Sources */,
+				5CE7069D2C06430200C65F08 /* CardModel.swift in Sources */,
+				5CE706A12C06452600C65F08 /* CardsPreviewData.swift in Sources */,
 				5CE7068B2C05F0D200C65F08 /* BankingTestApp.swift in Sources */,
+				5CE706A52C064B9700C65F08 /* TransactionRow.swift in Sources */,
 				5CE7069B2C0608E800C65F08 /* Tabs.swift in Sources */,
+				5CE7069F2C06448E00C65F08 /* TransactionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
