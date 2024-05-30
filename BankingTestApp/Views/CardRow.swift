@@ -7,19 +7,26 @@
 
 import SwiftUI
 
+private enum Constants {
+    static let verticalPadding: CGFloat = 8
+    static let cardImageSize: CGSize = CGSize(width: 48, height: 32)
+}
+
 struct CardRow: View {
     var card: Card
     
     var body: some View {
         HStack(alignment: .center) {
-            Image("credit_card_stub")
+            Image(systemName: "creditcard.and.123")
                 .resizable()
-                .frame(width: 60, height: 60)
+                .frame(
+                    width: Constants.cardImageSize.width,
+                    height: Constants.cardImageSize.height
+                )
             Text(card.cardName)
+            Spacer()
         }
-        .padding(.horizontal)
-        .padding(.vertical, 8)
-        .background(Color.gray)
+        .padding(.vertical, Constants.verticalPadding)
     }
 }
 

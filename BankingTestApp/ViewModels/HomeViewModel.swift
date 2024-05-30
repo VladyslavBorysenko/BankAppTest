@@ -11,11 +11,13 @@ import Combine
 final class HomeViewModel: ObservableObject, Observable {
     @Published var transactions: [Transaction] = []
     @Published var cards: [Card] = []
+    @Published var balance: Double = 0
     
     init() {
         Task {
             try await getTransactions()
             try await getCards()
+            try await getAccountBalance()
         }
     }
     
@@ -61,7 +63,24 @@ final class HomeViewModel: ObservableObject, Observable {
             return (response, mockData)
         }
         cards = try await api.fetchCards(for: "test").results
-        dump(cards)
+    }
+    
+    @MainActor
+    func getAccountBalance() async throws {
+        let mockData = readLocalJSONFile(forName: "TotalBalance")!
+        
+        MockURLProtocol.requestHandler = { request in
+            let response = HTTPURLResponse(
+                url: request.url!,
+                statusCode: 200,
+                httpVersion: nil,
+                headerFields: nil
+            )!
+            
+            return (response, mockData)
+        }
+        balance = try await api.fetchTotalBalance(for: "test").balance
+        dump(balance)
     }
 }
 
