@@ -9,7 +9,7 @@ import SwiftUI
 
 private enum Constants {
     static let listCornerRadius: CGFloat = 15
-    static let listShadowRadius: CGFloat = 7
+    static let listShadowRadius: CGFloat = 15
 }
 
 struct TransactionsListView: View {

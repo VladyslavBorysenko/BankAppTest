@@ -80,7 +80,6 @@ final class HomeViewModel: ObservableObject, Observable {
             return (response, mockData)
         }
         balance = try await api.fetchTotalBalance(for: "test").balance
-        dump(balance)
     }
 }
 

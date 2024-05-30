@@ -9,6 +9,7 @@ import SwiftUI
 
 private enum Constants {
     static let listCornerRadius: CGFloat = 15
+    static let listShadowRadius: CGFloat = 7
 }
 struct CardsListView: View {
     @EnvironmentObject var viewModel: HomeViewModel
@@ -23,7 +24,9 @@ struct CardsListView: View {
                 Spacer()
                 Text("See All")
                     .foregroundStyle(.blue)
+                    .bold()
             })
+            .padding(.bottom)
             ForEach(viewModel.cards.prefix(displayedCardsCount), id: \.id) { card in
                 CardRow(card: card)
             }
@@ -31,6 +34,7 @@ struct CardsListView: View {
         .padding()
         .background(Color.white)
         .clipShape(RoundedRectangle(cornerRadius: Constants.listCornerRadius, style: .continuous))
+        .shadow(color: Color.primary.opacity(0.1), radius: Constants.listShadowRadius)
         .padding()
     }
 }
