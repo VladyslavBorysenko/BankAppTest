@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct BankingTestApp: App {
+    @StateObject var homeScreenViewModel = HomeViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(homeScreenViewModel)
         }
     }
 }

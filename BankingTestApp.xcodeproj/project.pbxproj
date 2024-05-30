@@ -20,6 +20,14 @@
 		5CE706A82C065BCA00C65F08 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE706A72C065BCA00C65F08 /* Colors.swift */; };
 		5CE706AB2C0750A800C65F08 /* Transactions.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CE706AA2C0750A800C65F08 /* Transactions.json */; };
 		5CE706AD2C0750C800C65F08 /* Cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CE706AC2C0750C800C65F08 /* Cards.json */; };
+		5CE706B62C07C63700C65F08 /* TotalBalance.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CE706B52C07C63700C65F08 /* TotalBalance.json */; };
+		5CE706B92C07D5F800C65F08 /* BankAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE706B82C07D5F800C65F08 /* BankAPI.swift */; };
+		5CE706BB2C07D66500C65F08 /* BalanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE706BA2C07D66500C65F08 /* BalanceModel.swift */; };
+		5CE706BD2C07D83600C65F08 /* MockUrlProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE706BC2C07D83600C65F08 /* MockUrlProtocol.swift */; };
+		5CE706C02C07DABA00C65F08 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE706BF2C07DABA00C65F08 /* HomeViewModel.swift */; };
+		5CE706C22C07F3F300C65F08 /* TransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE706C12C07F3F300C65F08 /* TransactionsListView.swift */; };
+		5CE706C42C08A7E200C65F08 /* CardsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE706C32C08A7E200C65F08 /* CardsListView.swift */; };
+		5CE706C62C08A81200C65F08 /* CardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE706C52C08A81200C65F08 /* CardRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +45,14 @@
 		5CE706A72C065BCA00C65F08 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		5CE706AA2C0750A800C65F08 /* Transactions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Transactions.json; sourceTree = "<group>"; };
 		5CE706AC2C0750C800C65F08 /* Cards.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Cards.json; sourceTree = "<group>"; };
+		5CE706B52C07C63700C65F08 /* TotalBalance.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TotalBalance.json; sourceTree = "<group>"; };
+		5CE706B82C07D5F800C65F08 /* BankAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAPI.swift; sourceTree = "<group>"; };
+		5CE706BA2C07D66500C65F08 /* BalanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceModel.swift; sourceTree = "<group>"; };
+		5CE706BC2C07D83600C65F08 /* MockUrlProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUrlProtocol.swift; sourceTree = "<group>"; };
+		5CE706BF2C07DABA00C65F08 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5CE706C12C07F3F300C65F08 /* TransactionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListView.swift; sourceTree = "<group>"; };
+		5CE706C32C08A7E200C65F08 /* CardsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListView.swift; sourceTree = "<group>"; };
+		5CE706C52C08A81200C65F08 /* CardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +85,8 @@
 		5CE706892C05F0D200C65F08 /* BankingTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				5CE706BE2C07DA3C00C65F08 /* ViewModels */,
+				5CE706AE2C07550500C65F08 /* Network */,
 				5CE706A92C07504500C65F08 /* DataMock */,
 				5CE706A62C065BAB00C65F08 /* Helpers */,
 				5CE706992C0608CA00C65F08 /* Models */,
@@ -95,6 +113,9 @@
 			children = (
 				5CE7068C2C05F0D200C65F08 /* ContentView.swift */,
 				5CE706A42C064B9700C65F08 /* TransactionRow.swift */,
+				5CE706C12C07F3F300C65F08 /* TransactionsListView.swift */,
+				5CE706C32C08A7E200C65F08 /* CardsListView.swift */,
+				5CE706C52C08A81200C65F08 /* CardRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -105,6 +126,7 @@
 				5CE7069A2C0608E800C65F08 /* Tabs.swift */,
 				5CE7069C2C06430200C65F08 /* CardModel.swift */,
 				5CE7069E2C06448E00C65F08 /* TransactionModel.swift */,
+				5CE706BA2C07D66500C65F08 /* BalanceModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -122,8 +144,26 @@
 			children = (
 				5CE706AA2C0750A800C65F08 /* Transactions.json */,
 				5CE706AC2C0750C800C65F08 /* Cards.json */,
+				5CE706B52C07C63700C65F08 /* TotalBalance.json */,
 			);
 			path = DataMock;
+			sourceTree = "<group>";
+		};
+		5CE706AE2C07550500C65F08 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5CE706B82C07D5F800C65F08 /* BankAPI.swift */,
+				5CE706BC2C07D83600C65F08 /* MockUrlProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5CE706BE2C07DA3C00C65F08 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5CE706BF2C07DABA00C65F08 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +227,7 @@
 				5CE706922C05F0D300C65F08 /* Preview Assets.xcassets in Resources */,
 				5CE7068F2C05F0D300C65F08 /* Assets.xcassets in Resources */,
 				5CE706AB2C0750A800C65F08 /* Transactions.json in Resources */,
+				5CE706B62C07C63700C65F08 /* TotalBalance.json in Resources */,
 				5CE706AD2C0750C800C65F08 /* Cards.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,13 +240,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CE7068D2C05F0D200C65F08 /* ContentView.swift in Sources */,
+				5CE706C22C07F3F300C65F08 /* TransactionsListView.swift in Sources */,
 				5CE706A82C065BCA00C65F08 /* Colors.swift in Sources */,
 				5CE706A32C0646C000C65F08 /* TransactionsPreviewData.swift in Sources */,
+				5CE706BD2C07D83600C65F08 /* MockUrlProtocol.swift in Sources */,
 				5CE7069D2C06430200C65F08 /* CardModel.swift in Sources */,
 				5CE706A12C06452600C65F08 /* CardsPreviewData.swift in Sources */,
+				5CE706C42C08A7E200C65F08 /* CardsListView.swift in Sources */,
 				5CE7068B2C05F0D200C65F08 /* BankingTestApp.swift in Sources */,
 				5CE706A52C064B9700C65F08 /* TransactionRow.swift in Sources */,
+				5CE706C62C08A81200C65F08 /* CardRow.swift in Sources */,
+				5CE706C02C07DABA00C65F08 /* HomeViewModel.swift in Sources */,
+				5CE706BB2C07D66500C65F08 /* BalanceModel.swift in Sources */,
 				5CE7069B2C0608E800C65F08 /* Tabs.swift in Sources */,
+				5CE706B92C07D5F800C65F08 /* BankAPI.swift in Sources */,
 				5CE7069F2C06448E00C65F08 /* TransactionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,7 +15,7 @@ enum TransactionStatus: String {
     case completed, pending, failed
 }
 
-struct Transaction: Codable {
+struct Transaction: Codable, Identifiable, Hashable {
     let id, tribeTransactionID: String
     let tribeCardID: Int
     let amount, schemeID: String
@@ -73,4 +73,6 @@ struct Transaction: Codable {
     }
 }
 
-typealias Transactions = [Transaction]
+struct TransactionsResponse: Codable {
+    let results: [Transaction]
+}

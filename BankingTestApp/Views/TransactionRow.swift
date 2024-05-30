@@ -12,6 +12,7 @@ private enum Constants {
     static let iconWidth: CGFloat = 40
     static let transactionDeclinedMarkWidth: CGFloat = 12
     static let transactionDeclinedMarkHeight: CGFloat = 12
+    static let horizontalPadding: CGFloat = 8
 }
 struct TransactionRow: View {
     let transation: Transaction
@@ -48,25 +49,27 @@ struct TransactionRow: View {
                             .frame(width: Constants.transactionDeclinedMarkWidth, height: Constants.transactionDeclinedMarkHeight)
                     }
                 }
-            VStack {
+                .padding(.trailing, Constants.horizontalPadding)
+            VStack(alignment: .leading) {
                 Text(transation.merchantName)
                     .font(.headline)
                 // Since I didn't see any card related numbers in response structure I decided to
                 // display tribe card id
                 Text("•• \(transation.tribeCardID)")
-                }
+            }
             Spacer()
             VStack {
                 Text(transation.displayedTransactionAmount ?? 0, format: .currency(code: "EUR"))
                     .foregroundStyle(transactionAmountColor)
                     .bold()
             }
-            
-            }
         }
+        .padding(.horizontal)
+        .padding(.vertical, 8)
     }
+}
 
 #Preview {
-    TransactionRow(transation: sampleTransactions[7])
+    TransactionRow(transation: sampleTransactions[3])
     
 }

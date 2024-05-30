@@ -26,3 +26,7 @@ struct CardHolder: Codable {
         case logoURL = "logoUrl"
     }
 }
+
+struct CardsResponse: Codable {
+    let results: [Card]
+}

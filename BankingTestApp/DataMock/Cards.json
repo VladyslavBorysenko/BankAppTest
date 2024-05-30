@@ -1,93 +1,95 @@
-[
-  {
-    "id": "card123456",
-    "cardLast4": "1234",
-    "cardName": "John's Visa",
-    "isLocked": false,
-    "isTerminated": false,
-    "spent": 500,
-    "limit": 2000,
-    "limitType": "monthly",
-    "cardHolder": {
-      "id": "ch123456",
-      "fullName": "John Doe",
-      "email": "johndoe@example.com",
-      "logoUrl": "https://example.com/logo.png"
-    },
-    "fundingSource": "Bank Account",
-    "issuedAt": "2023-01-01T00:00:00Z"
-  },
-  {
-    "id": "card789012",
-    "cardLast4": "5678",
-    "cardName": "Jane's MasterCard",
-    "isLocked": true,
-    "isTerminated": false,
-    "spent": 1500,
-    "limit": 3000,
-    "limitType": "monthly",
-    "cardHolder": {
-      "id": "ch789012",
-      "fullName": "Jane Smith",
-      "email": "janesmith@example.com",
-      "logoUrl": "https://example.com/logo2.png"
-    },
-    "fundingSource": "Credit Line",
-    "issuedAt": "2023-02-01T00:00:00Z"
-  },
-  {
-    "id": "card345678",
-    "cardLast4": "9012",
-    "cardName": "Company Card",
-    "isLocked": false,
-    "isTerminated": true,
-    "spent": 0,
-    "limit": 10000,
-    "limitType": "annual",
-    "cardHolder": {
-      "id": "ch345678",
-      "fullName": "ACME Corp.",
-      "email": "contact@acmecorp.com",
-      "logoUrl": "https://example.com/logo3.png"
-    },
-    "fundingSource": "Corporate Account",
-    "issuedAt": "2023-03-01T00:00:00Z"
-  },
-  {
-    "id": "card234567",
-    "cardLast4": "6789",
-    "cardName": "Travel Rewards",
-    "isLocked": false,
-    "isTerminated": false,
-    "spent": 1000,
-    "limit": 5000,
-    "limitType": "monthly",
-    "cardHolder": {
-      "id": "ch234567",
-      "fullName": "Alice Johnson",
-      "email": "alicejohnson@example.com",
-      "logoUrl": "https://example.com/logo4.png"
-    },
-    "fundingSource": "Credit Card",
-    "issuedAt": "2023-04-01T00:00:00Z"
-  },
-  {
-    "id": "card456789",
-    "cardLast4": "3456",
-    "cardName": "Family Expenses",
-    "isLocked": true,
-    "isTerminated": false,
-    "spent": 2000,
-    "limit": 4000,
-    "limitType": "monthly",
-    "cardHolder": {
-      "id": "ch456789",
-      "fullName": "Michael Brown",
-      "email": "michaelbrown@example.com",
-      "logoUrl": "https://example.com/logo5.png"
-    },
-    "fundingSource": "Debit Card",
-    "issuedAt": "2023-05-01T00:00:00Z"
-  }
-]
-
+{ "results":
+    [
+        {
+            "id": "card123456",
+            "cardLast4": "1234",
+            "cardName": "John's Visa",
+            "isLocked": false,
+            "isTerminated": false,
+            "spent": 500,
+            "limit": 2000,
+            "limitType": "monthly",
+            "cardHolder": {
+                "id": "ch123456",
+                "fullName": "John Doe",
+                "email": "johndoe@example.com",
+                "logoUrl": "https://example.com/logo.png"
+            },
+            "fundingSource": "Bank Account",
+            "issuedAt": "2023-01-01T00:00:00Z"
+        },
+        {
+            "id": "card789012",
+            "cardLast4": "5678",
+            "cardName": "Jane's MasterCard",
+            "isLocked": true,
+            "isTerminated": false,
+            "spent": 1500,
+            "limit": 3000,
+            "limitType": "monthly",
+            "cardHolder": {
+                "id": "ch789012",
+                "fullName": "Jane Smith",
+                "email": "janesmith@example.com",
+                "logoUrl": "https://example.com/logo2.png"
+            },
+            "fundingSource": "Credit Line",
+            "issuedAt": "2023-02-01T00:00:00Z"
+        },
+        {
+            "id": "card345678",
+            "cardLast4": "9012",
+            "cardName": "Company Card",
+            "isLocked": false,
+            "isTerminated": true,
+            "spent": 0,
+            "limit": 10000,
+            "limitType": "annual",
+            "cardHolder": {
+                "id": "ch345678",
+                "fullName": "ACME Corp.",
+                "email": "contact@acmecorp.com",
+                "logoUrl": "https://example.com/logo3.png"
+            },
+            "fundingSource": "Corporate Account",
+            "issuedAt": "2023-03-01T00:00:00Z"
+        },
+        {
+            "id": "card234567",
+            "cardLast4": "6789",
+            "cardName": "Travel Rewards",
+            "isLocked": false,
+            "isTerminated": false,
+            "spent": 1000,
+            "limit": 5000,
+            "limitType": "monthly",
+            "cardHolder": {
+                "id": "ch234567",
+                "fullName": "Alice Johnson",
+                "email": "alicejohnson@example.com",
+                "logoUrl": "https://example.com/logo4.png"
+            },
+            "fundingSource": "Credit Card",
+            "issuedAt": "2023-04-01T00:00:00Z"
+        },
+        {
+            "id": "card456789",
+            "cardLast4": "3456",
+            "cardName": "Family Expenses",
+            "isLocked": true,
+            "isTerminated": false,
+            "spent": 2000,
+            "limit": 4000,
+            "limitType": "monthly",
+            "cardHolder": {
+                "id": "ch456789",
+                "fullName": "Michael Brown",
+                "email": "michaelbrown@example.com",
+                "logoUrl": "https://example.com/logo5.png"
+            },
+            "fundingSource": "Debit Card",
+            "issuedAt": "2023-05-01T00:00:00Z"
+        }
+    ]
+    
+}

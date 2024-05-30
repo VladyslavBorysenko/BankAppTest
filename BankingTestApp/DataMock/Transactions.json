@@ -1,5 +1,4 @@
-[
-  {
+{ "results": [ {
     "id": "txn001",
     "tribeTransactionId": "tribeTxn001",
     "tribeCardId": 123,
@@ -9,83 +8,84 @@
     "schemeId": "scheme01",
     "merchantName": "Amazon",
     "pan": "1234567890123456"
-  },
-  {
-    "id": "txn002",
-    "tribeTransactionId": "tribeTxn002",
-    "tribeCardId": 124,
-    "amount": "250.00",
-    "status": "pending",
-    "tribeTransactionType": "refund",
-    "schemeId": "scheme02",
-    "merchantName": "Ebay",
-    "pan": "6543210987654321"
-  },
-  {
-    "id": "txn003",
-    "tribeTransactionId": "tribeTxn003",
-    "tribeCardId": 125,
-    "amount": "75.50",
-    "status": "completed",
-    "tribeTransactionType": "purchase",
-    "schemeId": "scheme01",
-    "merchantName": "Walmart",
-    "pan": "9876543210987654"
-  },
-  {
-    "id": "txn004",
-    "tribeTransactionId": "tribeTxn004",
-    "tribeCardId": 126,
-    "amount": "300.00",
-    "status": "failed",
-    "tribeTransactionType": "purchase",
-    "schemeId": "scheme03",
-    "merchantName": "Apple Store",
-    "pan": "4321098765432109"
-  },
-  {
-    "id": "txn005",
-    "tribeTransactionId": "tribeTxn005",
-    "tribeCardId": 127,
-    "amount": "50.00",
-    "status": "completed",
-    "tribeTransactionType": "withdrawal",
-    "schemeId": "scheme04",
-    "merchantName": "ATM",
-    "pan": "2109876543210987"
-  },
-  {
-    "id": "txn006",
-    "tribeTransactionId": "tribeTxn006",
-    "tribeCardId": 128,
-    "amount": "150.00",
-    "status": "completed",
-    "tribeTransactionType": "purchase",
-    "schemeId": "scheme05",
-    "merchantName": "Best Buy",
-    "pan": "5678901234567890"
-  },
-  {
-    "id": "txn007",
-    "tribeTransactionId": "tribeTxn007",
-    "tribeCardId": 129,
-    "amount": "200.00",
-    "status": "pending",
-    "tribeTransactionType": "purchase",
-    "schemeId": "scheme02",
-    "merchantName": "Target",
-    "pan": "0987654321098765"
-  },
-  {
-    "id": "txn008",
-    "tribeTransactionId": "tribeTxn008",
-    "tribeCardId": 130,
-    "amount": "120.75",
-    "status": "completed",
-    "tribeTransactionType": "refund",
-    "schemeId": "scheme01",
-    "merchantName": "Costco",
-    "pan": "8765432109876543"
-  }
+},
+    {
+        "id": "txn002",
+        "tribeTransactionId": "tribeTxn002",
+        "tribeCardId": 124,
+        "amount": "250.00",
+        "status": "pending",
+        "tribeTransactionType": "refund",
+        "schemeId": "scheme02",
+        "merchantName": "Ebay",
+        "pan": "6543210987654321"
+    },
+    {
+        "id": "txn003",
+        "tribeTransactionId": "tribeTxn003",
+        "tribeCardId": 125,
+        "amount": "75.50",
+        "status": "completed",
+        "tribeTransactionType": "purchase",
+        "schemeId": "scheme01",
+        "merchantName": "Walmart",
+        "pan": "9876543210987654"
+    },
+    {
+        "id": "txn004",
+        "tribeTransactionId": "tribeTxn004",
+        "tribeCardId": 126,
+        "amount": "300.00",
+        "status": "failed",
+        "tribeTransactionType": "purchase",
+        "schemeId": "scheme03",
+        "merchantName": "Apple Store",
+        "pan": "4321098765432109"
+    },
+    {
+        "id": "txn005",
+        "tribeTransactionId": "tribeTxn005",
+        "tribeCardId": 127,
+        "amount": "50.00",
+        "status": "completed",
+        "tribeTransactionType": "withdrawal",
+        "schemeId": "scheme04",
+        "merchantName": "ATM",
+        "pan": "2109876543210987"
+    },
+    {
+        "id": "txn006",
+        "tribeTransactionId": "tribeTxn006",
+        "tribeCardId": 128,
+        "amount": "150.00",
+        "status": "completed",
+        "tribeTransactionType": "purchase",
+        "schemeId": "scheme05",
+        "merchantName": "Best Buy",
+        "pan": "5678901234567890"
+    },
+    {
+        "id": "txn007",
+        "tribeTransactionId": "tribeTxn007",
+        "tribeCardId": 129,
+        "amount": "200.00",
+        "status": "pending",
+        "tribeTransactionType": "purchase",
+        "schemeId": "scheme02",
+        "merchantName": "Target",
+        "pan": "0987654321098765"
+    },
+    {
+        "id": "txn008",
+        "tribeTransactionId": "tribeTxn008",
+        "tribeCardId": 130,
+        "amount": "120.75",
+        "status": "completed",
+        "tribeTransactionType": "refund",
+        "schemeId": "scheme01",
+        "merchantName": "Costco",
+        "pan": "8765432109876543"
+    }
 ]
-
+    
+}
