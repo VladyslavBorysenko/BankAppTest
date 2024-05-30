@@ -9,12 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     @State var selectedTab = Tabs.home
+    @EnvironmentObject var homeViewModel: HomeViewModel
     
     var body: some View {
         TabView(
             selection: $selectedTab,
             content:  {
-                Tabs.home.page.tabItem {
+                HomeView().tabItem {
                     Image("home")
                     Text(Tabs.home.rawValue)
                 }.tag(Tabs.home)
@@ -39,4 +40,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(HomeViewModel())
 }

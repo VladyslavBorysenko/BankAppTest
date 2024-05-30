@@ -38,8 +38,6 @@ struct TransactionsListView: View {
         }
         .background(Color.white)
         .clipShape(RoundedRectangle(cornerRadius: Constants.listCornerRadius, style: .continuous))
-        .shadow(color: Color.primary.opacity(0.1), radius: Constants.listShadowRadius)
-        .padding()
     }
 }
 

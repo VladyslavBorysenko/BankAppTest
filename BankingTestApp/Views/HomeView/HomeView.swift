@@ -12,28 +12,36 @@ struct HomeView: View {
     
     var body: some View {
         VStack(content: {
-            HStack(content: {
-                Spacer()
-                Button(action: {}, label: {
-                    Image(systemName: "plus")
-                        .symbolRenderingMode(.palette)
-                        .foregroundStyle(.blue)
-                        .font(.largeTitle)
+            Group {
+                HStack(content: {
+                    Spacer()
+                    Button(action: {}, label: {
+                        Image(systemName: "plus")
+                            .symbolRenderingMode(.palette)
+                            .foregroundStyle(.blue)
+                            .font(.title)
+                    })
                 })
-            })
-            HStack() {
-                Text("Money")
-                    .font(.title)
-                    .bold()
-                Spacer()
+                HStack() {
+                    Text("Money")
+                        .font(.title)
+                        .bold()
+                    Spacer()
+                }
             }
-            BalanceView()
-                .environmentObject(homeViewModel)
-            CardsListView(displayedCardsCount: 3)
-                .environmentObject(homeViewModel)
-            TransactionsListView(firstDisplayedTransactions: 3)
-                .environmentObject(homeViewModel)
+            .padding(.horizontal)
+            ScrollView {
+                BalanceView()
+                    .environmentObject(homeViewModel)
+                CardsListView(displayedCardsCount: 3)
+                    .environmentObject(homeViewModel)
+                TransactionsListView(firstDisplayedTransactions: 3)
+                    .environmentObject(homeViewModel)
+            }        
+            .shadow(color: Color.primary.opacity(0.05), radius: 7)
+            .padding()
         })
+        .background(Color.backgroundColor)
     }
 }
 

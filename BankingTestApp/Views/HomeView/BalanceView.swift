@@ -40,8 +40,6 @@ struct BalanceView: View {
         }
         .background(Color.white)
         .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
-        .shadow(color: Color.primary.opacity(0.1), radius: 7)
-        .padding()
     }
 }
 

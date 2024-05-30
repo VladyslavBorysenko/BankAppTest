@@ -13,4 +13,5 @@ extension Color {
     static let transactionAmountColorDeclined = Color(red: 0.494, green: 0.518, blue: 0.576) // #7e8493
     static let transactionSuccessColor = Color(red: 0, green: 0.675, blue: 0.31) // #00ac4f
     static let transactionDeclinedColor = Color(red: 0.925, green: 0.329, blue: 0.329) // #ec5454
+    static let backgroundColor = Color(red: 0.96, green: 0.96, blue: 0.98)
 }
