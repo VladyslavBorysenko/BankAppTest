@@ -14,16 +14,32 @@ enum Tabs: String {
     case account = "Account"
     
     @ViewBuilder
+    func stubPage(title: String) -> some View {
+        VStack {
+            HStack {
+                Text(title)
+                    .font(.title)
+                    .bold()
+                    .padding()
+                 Spacer()
+            }
+            Spacer()
+            Image("coming_soon")
+            Spacer()
+        }
+    }
+    
+    @ViewBuilder
     var page: some View {
         switch self {
         case .home:
             Text("Home")
         case .transactions:
-            Text("Transactions")
+            stubPage(title: "Transactions")
         case .myCards:
-            Text("My Cards")
+            stubPage(title: "My Cards")
         case .account:
-            Text("Account")
+            stubPage(title: "Account")
         }
     }
 }

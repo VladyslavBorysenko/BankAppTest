@@ -15,7 +15,9 @@ struct ContentView: View {
         TabView(
             selection: $selectedTab,
             content:  {
-                HomeView().tabItem {
+                HomeView()
+                    .environmentObject(homeViewModel)
+                    .tabItem {
                     Image("home")
                     Text(Tabs.home.rawValue)
                 }.tag(Tabs.home)
