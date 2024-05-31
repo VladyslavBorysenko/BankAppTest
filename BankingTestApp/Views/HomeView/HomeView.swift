@@ -9,17 +9,24 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var homeViewModel: HomeViewModel
+    @State var showingTransferScreen: Bool = false
     
     var body: some View {
         VStack(content: {
             Group {
                 HStack(content: {
                     Spacer()
-                    Button(action: {}, label: {
+                    Button(action: {
+                        showingTransferScreen = true
+                    }, label: {
                         Image(systemName: "plus")
                             .symbolRenderingMode(.palette)
                             .foregroundStyle(.blue)
                             .font(.title)
+                    })
+                    .sheet(isPresented: $showingTransferScreen, content: {
+                        TransferView(isPresented: $showingTransferScreen)
+                            .environmentObject(homeViewModel)
                     })
                 })
                 HStack() {

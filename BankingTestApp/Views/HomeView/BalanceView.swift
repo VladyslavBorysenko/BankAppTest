@@ -10,19 +10,6 @@ import SwiftUI
 struct BalanceView: View {
     @EnvironmentObject var viewModel: HomeViewModel
     
-    var currencyFormatter: NumberFormatter {
-        let formatter = NumberFormatter()
-        formatter.locale = Locale(identifier: "en")
-        formatter.numberStyle = .currency
-        formatter.currencySymbol = "€"
-        formatter.minimumFractionDigits = 2
-        formatter.maximumFractionDigits = 2
-        formatter.groupingSeparator = "."
-        formatter.decimalSeparator = ","
-        formatter.usesGroupingSeparator = true
-        return formatter
-    }
-    
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 4, content: {
